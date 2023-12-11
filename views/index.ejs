@@ -1,0 +1,39 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/newnavbar.ejs') %>
+
+<body>
+    <div class="container">
+        <br><br>
+        <div class="jumbotron" style="background-color: #5a6d79; padding: 30px; color: white;" >
+            <h1 class="display-4">Bem-vindo ao devBlog</h1>
+            <p class="lead">Blog destinado a amantes da tecnologia</p>
+            <hr class="my-4">
+            <p>Aqui você pode aprimorar seus conhecimentos e compartilhar eles com a nossa comunidade!</p>
+            <p class="lead">
+              <a class="btn bg-info " style="font-size: 24px;" href="#" role="button">Saber mais →</i></a>
+            </p>
+          </div>
+          <br><br>
+        <% articles.forEach(article => { %>
+           <div class="card">
+                <div class="card-header">
+                    <h2> <%= article.title %> </h2>
+                </div>
+                <div class="card-body">
+                    <a class="btn btn-info bg-info btn-outline-light" href="/<%= article.slug %> ">Ler Artigo</a>
+                </div>
+           </div>
+           <br><br>
+        <% }) %>
+        <br>
+        <div class="row">
+            <div class="col col-12">
+             <a href="/articles/page/2" style="float: right;">Próxma página >></a>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+</body>
+
+<%- include ('partials/footer.ejs') %>

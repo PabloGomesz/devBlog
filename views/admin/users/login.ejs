@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>devBlog</title>
+</head>
+<body>
+    
+    <main id="container">
+        <section id="img">
+            <img src="" alt="">
+        </section>
+
+        <section id="calculator">
+            <form action="/authenticate" method="POST" id="form">
+                <h1 id="title">
+                    Fazer Login
+                </h1>
+                <div class="input-box">
+                    <label for="weight">Email:</label>
+                </div>
+                <div class="input-field">
+                     <i class="fa-solid fa-weight-hanging"></i>
+                     <input type="email" id="email" name="email" required>
+                     <span>
+                    
+                     </span>
+                </div>
+                <div class="input-box">
+                    <label for="height">Senha:</label>
+                </div>
+                <div class="input-field">
+                     <i class="fa-solid fa-ruler"></i>
+                     <input type="password" id="password" step="0.01" name="password" required>
+                     <span>
+                    
+                     </span>
+                </div>
+                <button type="submit" id="calculate">Logar</button>
+            </form>
+        </section>
+    </main>
+   
+</body>
+
+
+
+<%- include ('../../partials/footer.ejs') %>

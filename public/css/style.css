@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+.navegar{
+   font-family: 'Ubuntu', sans-serif;
+    background-color: #0dcaf0;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.header-inner-content{
+    animation: inicializar .7s forwards;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navegar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.logo{
+    
+    color: #5a6d79;
+    font-size: 32px;
+}
+
+.logo span{
+    
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon-container a{
+    cursor: pointer;
+    font-size: 28px;
+    
+    
+}
+
+.icon-container a:first-child{
+    margin-right: 1rem;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul a:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button{
+    display: none;
+    
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+}
+
+.dropdown-menu a{
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    color: #fff;
+   
+}
+
+.dropdown:hover .dropdown-menu{
+    
+    background-color: #5a6d79;
+    display: block;
+}
+
